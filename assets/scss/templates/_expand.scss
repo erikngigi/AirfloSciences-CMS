@@ -1,0 +1,32 @@
+/* Add styling to the summary section */
+details summary {
+  background-color: $expand-background;
+  cursor: pointer; /* Change cursor to pointer for better user experience */
+  color: $expand-font-color;
+  font-size: 16px;
+  font-weight: 700; /* Make the summary text bold */
+  padding: 15px;
+
+  &:hover {
+    color: $expand-font-color-hover;
+  }
+}
+
+/* Style for the content section with class markdown-inner */
+.markdown-inner {
+  font-size: 16px;
+  line-height: 1.2;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+}
+
+/* Style for the content when the tab is open */
+details[open] .markdown-inner {
+  background-color: transparent; /* Change background color when tab is open */
+}
+
+.exclude-margin-bottom {
+  margin-bottom: 0;
+}

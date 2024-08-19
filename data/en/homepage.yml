@@ -1,0 +1,135 @@
+################################# Slider #####################################
+slider:
+  enable : true
+  bg_image : "images/banner/homepage.jpg"
+  slider_item:
+    # slider item loop
+    - title : "Connect with Us Today"
+      content : "Ready to turn your ideas into reality? Let's start a conversation! Click below to connect with us and bring your vision to life. Your success journey begins on our Contact Page"
+      animation_in : "left"
+      animation_out : "right"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "Contact Us"
+        link : "contact/"
+
+    # slider item loop
+    - title : "Explore Our Services"
+      content : "Elevate your experience with our premium services! Uncover a world of possibilities on our Service Page. Click now to explore how we can transform your goals into reality."
+      animation_in : "left"
+      animation_out : "right"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "Our Services"
+        link : "services/"
+
+    # slider item loop
+    - title : "Discover Our Passion"
+      content : "Dive into our story, discover our passion. Click now to explore the heart and soul behind our brand on the About Page. Uncover the essence of who we are and join us on a journey of inspiration and innovation. Let's create stories together!"
+      animation_in : "left"
+      animation_out : "right"
+      # available animation : left, right, up, down
+      button:
+        enable : true
+        label : "About Us"
+        link : "about/"
+
+
+############################### Banner feature ###############################
+banner_feature:
+  enable : false
+  image : "images/banner/banner-feature.png"
+  feature_item:
+    # feature item loop
+    - name : "Scholorship News"
+      icon : "ti-settings" # icon pack : https://themify.me/themify-icons
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+
+    # feature item loop
+    - name : "Our Notice Board"
+      icon : "ti-user" # icon pack : https://themify.me/themify-icons
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+
+    # feature item loop
+    - name : "Our Achievements"
+      icon : "ti-agenda" # icon pack : https://themify.me/themify-icons
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+
+    # feature item loop
+    - name : "Admission Now"
+      icon : "ti-write" # icon pack : https://themify.me/themify-icons
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  dolore magna aliqua. Ut enim ad"
+
+
+############################## about ##################################
+about:
+  enable : true
+  title : "About Airflo Sciences"
+  image : "images/about/about-us-ehs.png"
+  content : "Based in Nairobi, Kenya, Airflo Sciences is a leading Environmental Health and Safety (EHS) consultancy, dedicated to excellence and innovation. With ISO 17025 accreditation, we deliver comprehensive EHS solutions, ensuring regulatory compliance and fostering sustainable practices. Our team of experts is committed to safeguarding environments and promoting health and safety across diverse industries. Partner with Airflo Sciences for cutting-edge solutions and a safer, greener future."
+  button:
+    enable : true
+    label : "Learn more"
+    link : "about/"
+
+############################# Course ################################
+course:
+  enable : true
+  title : "Our Services"
+  # title_b : "Air Quality (QA) Portfolio"
+  # course item comes from "content/**/course" folder.
+
+########################## Call to action ############################
+cta:
+  enable : true
+  subtitle : "Click to Contact Us"
+  title : "Submit a Service Request"
+  button:
+    enable : true
+    label : "contact us"
+    link : "contact/"
+
+
+######################## Success story #############################
+success_story:
+  enable : false
+  bg_image : "images/backgrounds/success-story-ehs.jpg"
+  title : "Success Stories"
+  content : "Airflo Sciences, an EHS trailblazer, ensured a safer tomorrow for a global manufacturing giant. With cutting-edge solutions, Airflo transformed complex environmental challenges into sustainable successes. Our client's enhanced safety metrics and regulatory compliance stand as a testament to Airflo Sciences' unwavering commitment to excellence in Environmental Health and Safety."
+  # video link
+  video_link : "/"
+
+############################# event ################################
+event:
+  enable : false
+  title : "Upcoming Events"
+  # event item comes from "content/**/event" folder.
+  
+########################### funfacts ############################
+funfacts:
+  enable : false
+  funfact_item:
+    # funfact item loop
+    - name : "SERVICES"
+      count : "15"
+
+    # funfact item loop
+    - name : "PROJECTS"
+      count : "300"
+
+    # funfact item loop
+    - name : "SOLUTIONS"
+      count : "200"
+
+    # funfact item loop
+    - name : "SATISFIED CLIENTS"
+      count : "1400"
+
+# funfact is for about page
+############################# blog ################################
+blog:
+  enable : false
+  title : "Latest News"
+  # blog item comes from "content/**/blog" folder.

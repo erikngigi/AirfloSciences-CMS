@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+<!-- contact -->
+<section class="section bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="section-title">{{ i18n "contact_us" }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <form action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
+          <input type="text" class="form-control mb-3" id="name" name="Name" placeholder="Your Name" required>
+          <input type="email" class="form-control mb-3" id="mail" name="Email" placeholder="Your Email Address" required>
+          <!-- <select class="custom-select mb-3"> -->
+          <!--   <option value="" selected="" disabled="">Choose a Service</option> -->
+          <!--   <option value="1">Air Dispersion Monitoring</option> -->
+          <!--   <option value="2">Ambient Air Monitoring</option> -->
+          <!--   <option value="3">Compressed Air Testing</option> -->
+          <!--   <option value="4">Fume Exposure Analysis</option> -->
+          <!--   <option value="5">HVAC Validation Testing</option> -->
+          <!--   <option value="6">Indoor Air Quality Testing</option> -->
+          <!--   <option value="7">Landfill Gas Testing</option> -->
+          <!--   <option value="8">Product Testing</option> -->
+          <!--   <option value="9">Stack Emissions Testing</option> -->
+          <!--   <option value="10">Thermic Oil Testing</option> -->
+          <!--   <option value="11">Effluent Water Testing</option> -->
+          <!-- </select> -->
+          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject" required>
+          <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message" required></textarea>
+          <button type="submit" value="send" class="btn btn-primary">{{ i18n "send" }}</button>
+        </form>
+      </div>
+      <div class="col-lg-5 content">
+        {{ .Content }}
+        <a href="tel:{{ site.Params.mobile }}" class="text-color h5 d-block">{{ site.Params.mobile }}</a>
+        <a href="mailto:{{ site.Params.email }}" class="mb-5 text-color h5 d-block">{{ site.Params.email }}</a>
+        <p>{{ site.Params.address | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /contact -->
+
+<!-- gmap -->
+<section class="section pt-0">
+  <!-- Google Map -->
+  <div id="map_canvas" 
+  data-latitude="{{ site.Params.map.map_latitude }}"
+  data-longitude="{{ site.Params.map.map_longitude }}" 
+  data-marker="{{ site.Params.map.map_marker | absURL }}"
+  data-marker-name="{{ site.Title }}"></div>
+</section>
+<!-- /gmap -->
+
+{{ end }}
