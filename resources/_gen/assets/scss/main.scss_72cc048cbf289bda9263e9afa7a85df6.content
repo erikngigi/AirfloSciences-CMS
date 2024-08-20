@@ -229,7 +229,7 @@ a h4:hover {
   background-repeat: no-repeat; }
 
 .border-primary {
-  border-color: #ededf1 !important; }
+  border-color: #1e1e4b !important; }
 
 /* overlay */
 .overlay {
