@@ -72,6 +72,12 @@ export default defineConfig({
               component: "textarea",
             },
           },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Post Body",
+            isBody: true,
+          },
         ],
       },
       {
@@ -116,6 +122,12 @@ export default defineConfig({
             ui: {
               component: "textarea",
             },
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Post Body",
+            isBody: true,
           },
         ],
       },
