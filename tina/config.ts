@@ -1,3 +1,4 @@
+import { type } from "os";
 import { defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
@@ -29,9 +30,10 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/english",
+        name: "about",
+        label: "About",
+        path: "content/english/about",
+        format: "md",
         fields: [
           {
             type: "string",
@@ -39,11 +41,299 @@ export default defineConfig({
             label: "Title",
             isTitle: true,
             required: true,
+            ui: {
+              validate: (value, data) => {
+                const lengthOfTitle = value?.length || 0;
+                const lengthOfDescription = data?.description?.length || 0;
+                if (lengthOfTitle >= lengthOfDescription) {
+                  return "The description must be longer than the title";
+                }
+              },
+            },
+          },
+          {
+            type: "boolean",
+            name: "draft",
+            label: "Draft",
+            required: true,
+          },
+          {
+            type: "image",
+            name: "bg_image",
+            label: "Background Image(about page)",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+            ui: {
+              component: "textarea",
+            },
+          },
+        ],
+      },
+      {
+        name: "contact",
+        label: "Contact",
+        path: "content/english/contact",
+        format: "md",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+            ui: {
+              validate: (value, data) => {
+                const lengthOfTitle = value?.length || 0;
+                const lengthOfDescription = data?.description?.length || 0;
+                if (lengthOfTitle >= lengthOfDescription) {
+                  return "The description must be longer than the title";
+                }
+              },
+            },
+          },
+          {
+            type: "boolean",
+            name: "draft",
+            label: "Draft",
+            required: true,
+          },
+          {
+            type: "image",
+            name: "bg_image",
+            label: "Background Image(about page)",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+            ui: {
+              component: "textarea",
+            },
+          },
+        ],
+      },
+      {
+        name: "news",
+        label: "News",
+        path: "content/english/news",
+        format: "md",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+            ui: {
+              validate: (value, data) => {
+                const lengthOfTitle = value?.length || 0;
+                const lengthOfDescription = data?.description?.length || 0;
+                if (lengthOfTitle >= lengthOfDescription) {
+                  return "The description must be longer than the title";
+                }
+              },
+            },
+          },
+          {
+            type: "datetime",
+            name: "publish_date",
+            label: "Publish Date",
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+            required: true,
+          },
+          {
+            type: "boolean",
+            name: "draft",
+            label: "Draft",
+            required: true,
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Cover Image(News Tab)",
+            required: true,
+          },
+          {
+            type: "image",
+            name: "bg_image",
+            label: "Banner Image(News Page)",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            type: "string",
+            name: "location",
+            label: "Location",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "type",
+            label: "Types",
+            required: true,
           },
           {
             type: "rich-text",
             name: "body",
-            label: "Body",
+            label: "Post Body",
+            isBody: true,
+          },
+        ],
+      },
+      {
+        name: "publication",
+        label: "Publication",
+        path: "content/english/publication",
+        format: "md",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+            ui: {
+              validate: (value, data) => {
+                const lengthOfTitle = value?.length || 0;
+                const lengthOfDescription = data?.description?.length || 0;
+                if (lengthOfTitle >= lengthOfDescription) {
+                  return "The description must be longer than the title";
+                }
+              },
+            },
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+            required: true,
+          },
+          {
+            type: "boolean",
+            name: "draft",
+            label: "Draft",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            type: "image",
+            name: "download_link",
+            label: "Download Link(documents)",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "type",
+            label: "Types",
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Post Body",
+            isBody: true,
+          },
+        ],
+      },
+      {
+        name: "services",
+        label: "Services",
+        path: "content/english/services",
+        format: "md",
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+            ui: {
+              validate: (value, data) => {
+                const lengthOfTitle = value?.length || 0;
+                const lengthOfDescription = data?.description?.length || 0;
+                if (lengthOfTitle >= lengthOfDescription) {
+                  return "The description must be longer than the title";
+                }
+              },
+            },
+          },
+          {
+            type: "datetime",
+            name: "date",
+            label: "Date",
+            required: true,
+          },
+          {
+            type: "boolean",
+            name: "draft",
+            label: "Draft",
+            required: true,
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "Cover Image(Home Page)",
+            required: true,
+          },
+          {
+            type: "image",
+            name: "bg_image",
+            label: "Banner Image(Service Page)",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+            ui: {
+              component: "textarea",
+            },
+          },
+          {
+            type: "string",
+            name: "category",
+            label: "Categories",
+            required: true,
+          },
+          {
+            type: "string",
+            name: "type",
+            label: "Types",
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Post Body",
             isBody: true,
           },
         ],

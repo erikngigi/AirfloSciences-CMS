@@ -9,7 +9,7 @@ description : "Air dispersion modeling is a mathematical simulation technique us
 # course thumbnail
 image: "images/services/air-dispersion-modelling.jpg"
 # taxonomy
-category: "Environmental Testing"
+category: "Environmental Testing Services"
 # duration
 # duration : "06 Month"
 # weekly
