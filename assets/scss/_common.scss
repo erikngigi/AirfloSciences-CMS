@@ -144,7 +144,9 @@ a h4{
 }
 
 .bg-cta {
-  background: $cta-color !important;
+  background: $body-color !important;
+  border-top: 2px solid $secondary-color !important;
+  border-bottom: 2px solid $white !important;
 }
 
 .bg-gray {
@@ -251,7 +253,7 @@ a h4{
 
 /* page title */
 .page-title-section {
-  padding: 200px 0 80px;
+  padding: 200px 0 150px;
 }
 
 .custom-breadcrumb {

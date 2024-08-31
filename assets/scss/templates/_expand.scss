@@ -2,23 +2,29 @@
 details summary {
   background-color: $expand-background;
   cursor: pointer; /* Change cursor to pointer for better user experience */
-  color: $expand-font-color;
-  font-size: 16px;
+  color: $white;
+  font-size: 18px;
   font-weight: 700; /* Make the summary text bold */
   padding: 15px;
+  max-width: 1000px;
+
+  &::before {
+    background-color: $expand-font-color-hover;
+  }
 
   &:hover {
-    color: $expand-font-color-hover;
+    background-color: $expand-font-color-hover;
+    color: $primary-color;
   }
 }
 
 /* Style for the content section with class markdown-inner */
 .markdown-inner {
-  font-size: 16px;
-  line-height: 1.2;
+  font-size: 18px;
+  line-height: 1.5;
   padding-top: 5px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 5px;
+  padding-right: 100px;
   padding-bottom: 5px;
 }
 
