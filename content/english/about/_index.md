@@ -1,12 +1,13 @@
 ---
-title: "About Us"
+title: About Us
 draft: false
-# page title background image
-bg_image: "images/about/about-us-banner.jpg"
-# about image
-# image: "images/about/about-page.jpg"
-# meta description
-description : "Welcome to Airflo Sciences, where innovation meets dedication in the realm of Environmental Health and Safety (EHS). Established with a commitment to promoting a safer, healthier, and more sustainable world, Airflo Sciences stands at the forefront of cutting-edge solutions in the EHS industry."
+bg_image: images/about/about-us-banner.jpg
+description: >-
+  Welcome to Airflo Sciences, where innovation meets dedication in the realm of
+  Environmental Health and Safety (EHS). Established with a commitment to
+  promoting a safer, healthier, and more sustainable world, Airflo Sciences
+  stands at the forefront of cutting-edge solutions in the Environmental Health
+  & Safety (EHS) industry.
 ---
 
 ## Discovering Tomorrow’s Solutions Today
