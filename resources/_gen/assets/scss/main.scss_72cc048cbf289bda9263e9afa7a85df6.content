@@ -242,7 +242,7 @@ a h4:hover {
     top: 0;
     left: 0;
     background: #263459;
-    opacity: 0.5; }
+    opacity: 0.2; }
 
 .outline-0 {
   outline: 0 !important; }
