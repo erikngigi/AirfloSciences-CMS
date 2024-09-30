@@ -102,7 +102,7 @@
     <!-- course list -->
     <div class="row justify-content-center">
       <!-- course item -->
-      {{ range first 6 (where site.RegularPages "Type" "services")}}
+      {{ range first 9 (where site.RegularPages "Type" "services")}}
       <div class="col-lg-4 col-sm-6 mb-5">
         {{ .Render "service" }}
       </div>
@@ -130,7 +130,7 @@
         <h2 class="section-title text-dark">{{ .title | markdownify }}</h2>
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | absLangURL }}" class="btn btn-light">{{ .label }}</a>
+        <a href="{{ .link | absLangURL }}" class="btn btn-outline-primary">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>

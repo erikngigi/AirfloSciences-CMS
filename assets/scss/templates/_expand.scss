@@ -4,6 +4,7 @@ details summary {
   cursor: pointer; /* Change cursor to pointer for better user experience */
   color: $white;
   font-size: 16px;
+  line-height: 1.8;
   font-weight: 700; /* Make the summary text bold */
   padding: 15px;
   max-width: 1000px;
@@ -20,8 +21,8 @@ details summary {
 
 /* Style for the content section with class markdown-inner */
 .markdown-inner {
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.8;
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 100px;

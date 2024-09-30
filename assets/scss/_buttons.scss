@@ -16,10 +16,10 @@
   &::before {
     position: absolute;
     content: "";
-    height: 80%;
+    height: 100%;
     width: 100%;
     left: 0;
-    bottom: 10%;
+    bottom: 0;
     z-index: -1;
     transition: transform 0.2s ease-in-out;
     transform-origin: top;
@@ -53,7 +53,8 @@
 
 .btn-primary {
   color: $white;
-  background-color: $secondary-color;
+  background-color: transparent;
+  border: 1px solid $white;
 
   &::before {
     background-color: $white;
@@ -64,16 +65,17 @@
   &.focus,
   &:focus,
   &.active {
-    color: $secondary-color !important;
-    background-color: darken($color: $secondary-color, $amount: 10) !important;
-    border-color: darken($color: $secondary-color, $amount: 10) !important;
+    color: $black !important;
+    /* background-color: darken($color: $secondary-color, $amount: 10) !important; */
+    background-color: transparent !important;
+    border-color: darken($color: $white, $amount: 10) !important;
   }
 }
 
 .btn-outline-primary {
   color: $white;
-  background-color: $secondary-color;
-  border: 1px solid $primary-color;
+  background-color: transparent;
+  border: 1px solid $white;
 
   &::before {
     background-color: $white;
@@ -84,9 +86,10 @@
   &.focus,
   &:focus,
   &.active {
-    color: $secondary-color !important;
-    background-color: $secondary-color !important;
-    border-color: $button !important;
+    color: $black !important;    
+    background-color: transparent !important;
+    /* border-color: $button !important; */
+    border-color: darken($color: $white, $amount: 10) !important;
   }
 }
 
