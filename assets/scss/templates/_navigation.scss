@@ -12,11 +12,11 @@
 
 .navigation {
   /* background: linear-gradient(to right, transparent 50%, $secondary-color 50%); */
-  background: $secondary-color;
+  background: $black;
   transition: .2s ease;
 
   @include desktop {
-    background: $secondary-color;
+    background: $black;
 
     .navbar-brand {
       padding: 12px 0;
@@ -32,16 +32,16 @@
 
 .navbar-nav {
   padding-left: 50px;
-  background: $secondary-color;
+  background: $black;
 
   @include desktop {
     padding-left: 0;
-    background: $secondary-color;
+    background: $black;
   }
 }
 
 .nav-bg {
-  background-color: $secondary-color;
+  background-color: $black;
 }
 
 .nav-item {
@@ -105,7 +105,7 @@ link:focus,
   top: 0;
   width: 100%;
   z-index: 10;
-  background: $white;
+  background: $black;
   box-shadow: 0 2px 5px #0000000d;
 }
 
@@ -130,7 +130,7 @@ link:focus,
       transition: .3s ease;
       opacity: 0;
       transform: translateY(20px);
-      background: $white;
+      background: $black;
 
       @include desktop {
         display: none;
